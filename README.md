@@ -2,7 +2,7 @@
 
 <p align="center">Go로 컴파일되는 한글 프로그래밍 언어</p>
 
-<img align="center" src="./sum.png"></img>
+<img align="center" src="./sum.png" width="500px"></img>
 
 ## 개요
 
