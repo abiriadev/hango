@@ -2,6 +2,8 @@
 
 <p align="center">Go로 컴파일되는 한글 프로그래밍 언어</p>
 
+<img align="center" src="./sum.png"></img>
+
 ## 개요
 
 한고는 Go에 기반한 한글 프로그래밍 언어로, 다음 개념의 증명을 위해 만들어졌습니다.
@@ -73,10 +75,6 @@ $ hango ./examples/*
 ```sh
 $ hango < ./examples/hello.hgo
 ```
-
-## 문법 강조
-
-![./sum.png]
 
 ## 고민중인 기능
 
