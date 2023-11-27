@@ -13,11 +13,11 @@ func main() {
 		fmt.Println("pass a file to transform")
 	}
 
-	d, _ := os.ReadFile(os.Args[1])
+	d, _ := os.Open(os.Args[1])
 
-	lex := hango.HangoLexNew(string(d))
+	lex := hango.HangoLexNew(d)
 
 	for tok, l, r := lex.Scan(); tok != scanner.EOF; tok, l, r = lex.Scan() {
-		fmt.Println(tok, l, r)
+		fmt.Println(l, r, scanner.TokenString(tok))
 	}
 }

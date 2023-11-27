@@ -11,9 +11,9 @@ type HangoLex struct {
 
 func HangoLexNew(src string) HangoLex {
 	var lex HangoLex
+	lex.s.Init(strings.NewReader(src))
 	lex.s.Mode = scanner.GoTokens &^ scanner.SkipComments
 	lex.s.Whitespace ^= 1<<' ' | 1<<'\t' | 1<<'\r' | 1<<'\n'
-	lex.s.Init(strings.NewReader(src))
 	return lex
 }
 
