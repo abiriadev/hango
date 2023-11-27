@@ -28,7 +28,7 @@ func main() {
 			ext := filepath.Ext(src)
 
 			if ext != ".hgo" {
-				panic("no hgo!")
+				panic("File extensions for hango source files must be `*.hgo`")
 			}
 
 			target := strings.TrimSuffix(src, ext) + ".go"
