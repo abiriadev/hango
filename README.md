@@ -74,6 +74,10 @@ $ hango ./examples/*
 $ hango < ./examples/hello.hgo
 ```
 
+## 문법 강조
+
+![./sum.png]
+
 ## 고민중인 기능
 
 본 프로젝트의 원 목적은 <ins>표준 라이브러리만 사용하여</ins> 100줄 이내의 짧은 코드만으로 Go와 1:1 변환 가능한 언어를 구현하는 것이었습니다.
@@ -82,7 +86,7 @@ $ hango < ./examples/hello.hgo
 
 -   [ ] `공개` 키워드
 -   [ ] Context-sensitive transformations: 자체 파서 구현 필요
--   [ ] Syntax highlighting support
+-   [x] Syntax highlighting support
 -   [ ] 더 적은 키워드
 -   [ ] 기본 타입(`int`, `string`), 빌트인 함수(`len`, `make`) 지원: name resolution needed
 
