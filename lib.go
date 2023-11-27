@@ -52,9 +52,9 @@ var KwdMap = map[string]string{
 	"선언":   "var",
 }
 
-func MapKeyWord(tok string) string {
+func MapKeyword(tok string) string {
 	r := KwdMap[tok]
-	if tok == "" {
+	if r == "" {
 		return tok
 	} else {
 		return r
@@ -65,7 +65,7 @@ func (this HangoLex) RegenerateSource() string {
 	var buf strings.Builder
 
 	for tok, l, r := this.Scan(); tok != scanner.EOF; tok, l, r = this.Scan() {
-		buf.WriteString(this.src[l:r])
+		buf.WriteString(MapKeyword(this.src[l:r]))
 	}
 
 	return buf.String()
