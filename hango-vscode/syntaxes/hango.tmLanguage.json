@@ -98,7 +98,7 @@
 		},
 		{
 			"comment": "Function declarations",
-			"match": "^(\\b(func|함수)\\b)(?:\\s+(\\([^\\)]+\\)\\s+)?(\\w+)(?=\\())?",
+			"match": "^(\\bfunc\\b|함수)(?:\\s+(\\([^\\)]+\\)\\s+)?(\\w+)(?=\\())?",
 			"captures": {
 				"1": {
 					"name": "keyword.function.go"
@@ -129,7 +129,7 @@
 		},
 		{
 			"comment": "Functions",
-			"match": "(\\b(func|함수)\\b)|(\\w+)(?=\\()",
+			"match": "(\\bfunc\\b|함수)|(\\w+)(?=\\()",
 			"captures": {
 				"1": {
 					"name": "keyword.function.go"
