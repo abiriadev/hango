@@ -16,5 +16,5 @@ func main() {
 
 	r := hango.HangoLexNew(string(d)).RegenerateSource()
 
-	fmt.Println(r)
+	fmt.Print(r)
 }
