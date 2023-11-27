@@ -17,7 +17,7 @@ func HangoLexNew(src string) HangoLex {
 	return lex
 }
 
-func (this *HangoLex) Scan(src string) (rune, int, int) {
+func (this *HangoLex) Scan() (rune, int, int) {
 	tok := this.s.Scan()
 	return tok, this.s.Position.Offset, this.s.Pos().Offset
 }
